@@ -1,4 +1,5 @@
 import schlange from "../assets/images/schlange.jpg"
+import tanzpadagogik from "../assets/images/Tanzpadagogik.jpg"
 
 const Ebook = () => {
     return(
@@ -10,8 +11,15 @@ const Ebook = () => {
             <h1 className="text-brandYellow text-6xl font-tussilago">Rituelle Tanzpädagogik</h1>
         </div>
         </div>
-        <div className="h-300">
-        <p>Ebook</p>
+        <div className="h-125 flex justify-between">
+        <div className="w-125 flex justify-end align-top ">
+            <img src={tanzpadagogik} alt="Rituelle Tanzpädagogik" className="w-64 h-auto object-contain"/>
+        </div>
+        <div className="w-325 bg-amber-200">
+            <h2 className="font-tussilago text-xl">
+                Grundlagen für tanzpädagogische Workshops
+            </h2>
+        </div>
         </div>
 
         </>
