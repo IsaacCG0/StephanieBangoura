@@ -25,8 +25,8 @@ const Ebook = () => {
                             Grundlagen für tanzpädagogische Workshops
                         </h1>
                     </header>
-                    <br />
-                    <div className="mt-10 text-justify">
+                    <hr />
+                    <div className=" mt-5 text-justify">
                         <p>
                             Aus der Verbindung westafrikanisch-animistischer Tanztraditionen und humanistischer
                             Psychologie hat Stephanie Bangoura eine Tanzpädagogik entwickelt,
