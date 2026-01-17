@@ -8,11 +8,11 @@ const Ebook = () => {
                 <div className="absolute inset-0 bg-fixed bg-center bg-cover brightness-50 z-0" style={{ backgroundImage: `url(${schlange})` }}>
                 </div>
                 <div className="relative z-10 text-center">
-                    <h1 className="text-brandYellow text-6xl font-tussilago">Rituelle Tanzpädagogik</h1>
+                    <h1 className="text-brandYellow lg:text-6xl md: text-3xl font-tussilago">Rituelle Tanzpädagogik</h1>
                 </div>
             </div>
-            <br />
-            <div className="h-125 flex justify-between">
+            <div className="h-15"></div>
+            <div className="h-125 flex md:flex-col lg:flex-row justify-between">
                 <div className="w-125 flex justify-end items-start ">
                     <img src={tanzpadagogik} alt="Rituelle Tanzpädagogik" className="w-64 h-auto object-contain" />
                 </div>
@@ -25,7 +25,7 @@ const Ebook = () => {
                             Grundlagen für tanzpädagogische Workshops
                         </h1>
                     </div>
-                    <hr />
+                    <br />
                     <div className="mt-10 text-justify">
                         <p>
                             Aus der Verbindung westafrikanisch-animistischer Tanztraditionen und humanistischer
