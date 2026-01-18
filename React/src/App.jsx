@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 function App() {
   {/** Pages value */}
-  const [page, setPage] = useState("home");
+  const [page, setPage] = useState("ebook");
 
   return (
     <>
