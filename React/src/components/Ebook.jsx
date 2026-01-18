@@ -15,8 +15,17 @@ const Ebook = () => {
             <div className="h-15"></div>
             {/**Content */}
             <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-10">
-                <div className="w-full lg:w-1/4 flex justify-center lg:justify-end items-start">
-                    <img src={tanzpadagogik} alt="Rituelle Tanzpädagogik" className="w-64 h-auto object-contain" />
+                <div className="w-full lg:w-1/4 flex flex-col justify-start lg:justify-start items-center">
+                    <img src={tanzpadagogik} alt="Rituelle Tanzpädagogik" className=" w-1/3 md:w-1/3  lg:w-full h-auto object-contain" />
+                    <br />
+                    <div className="w-full text-start">
+                        <p>Stephanie Bangoura</p>
+                        <h2 className="font-tussilago">Rituelle Tanzpädagogik</h2>
+                        <h4 className="text-gray-400">Die Kunst, Gemeinschaft zu tanzen</h4>
+                        <p>2025, 371 S., 29,90 € (D)</p>
+                        <p>ISBN 9783763973705</p>
+                        <p>Nur als E-Book erhältlich</p>
+                    </div>
                 </div>
                 <div className="w-full lg:w-2/4 flex flex-col">
                     <header>
