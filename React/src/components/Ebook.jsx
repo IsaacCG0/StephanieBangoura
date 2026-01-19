@@ -43,10 +43,11 @@ const Ebook = () => {
                             Grundlagen für tanzpädagogische Workshops
                         </h1>
                     </header>
-                    <div className="flex justify-between">
-                        <button onClick={() => { setContent("beschreibung");}} className="text-left font-medium hover:text-blueSecondary hover:underline hover:cursor-pointer transition">Beschreibung</button>
-                        <button onClick={() => { setContent("inhaltsverzeichnis");}} className="text-left font-medium hover:text-blueSecondary hover:underline hover:cursor-pointer transition">Inhaltsverzeichnis</button>
-                        <button onClick={() => { setContent("portrat");}} className="text-left font-medium hover:text-blueSecondary hover:underline hover:cursor-pointer transition">Portrat</button>
+                    <div className="h-20"></div>
+                    <div className="flex">
+                        <button onClick={() => { setContent("beschreibung");}} className={`text-left font-bold hover:text-blueSecondary hover:underline hover:cursor-pointer transition ${content === "beschreibung" ? "text-brandRed": "text-brandBlack"}`}>Beschreibung</button>
+                        <button onClick={() => { setContent("inhaltsverzeichnis");}} className={`text-left font-bold hover:text-blueSecondary hover:underline hover:cursor-pointer transition ${content === "beschreibung" ? "text-brandRed": "text-brandBlack"}`}>Inhaltsverzeichnis</button>
+                        <button onClick={() => { setContent("portrat");}} className={`text-left font-bold hover:text-blueSecondary hover:underline hover:cursor-pointer transition ${content === "beschreibung" ? "text-brandRed": "text-brandBlack"}`}>Portrat</button>
                     </div>
                     <hr />
                     {content === "beschreibung" && <Beschreibung></Beschreibung>}
