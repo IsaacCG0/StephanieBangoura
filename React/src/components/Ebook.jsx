@@ -44,10 +44,10 @@ const Ebook = () => {
                         </h1>
                     </header>
                     <div className="h-20"></div>
-                    <div className="flex">
+                    <div className="flex m-5">
                         <button onClick={() => { setContent("beschreibung");}} className={`text-left font-bold hover:text-blueSecondary hover:underline hover:cursor-pointer transition ${content === "beschreibung" ? "text-brandRed": "text-brandBlack"}`}>Beschreibung</button>
-                        <button onClick={() => { setContent("inhaltsverzeichnis");}} className={`text-left font-bold hover:text-blueSecondary hover:underline hover:cursor-pointer transition ${content === "beschreibung" ? "text-brandRed": "text-brandBlack"}`}>Inhaltsverzeichnis</button>
-                        <button onClick={() => { setContent("portrat");}} className={`text-left font-bold hover:text-blueSecondary hover:underline hover:cursor-pointer transition ${content === "beschreibung" ? "text-brandRed": "text-brandBlack"}`}>Portrat</button>
+                        <button onClick={() => { setContent("inhaltsverzeichnis");}} className={`text-left font-bold hover:text-blueSecondary hover:underline hover:cursor-pointer transition ${content === "inhaltsverzeichnis" ? "text-brandRed": "text-brandBlack"}`}>Inhaltsverzeichnis</button>
+                        <button onClick={() => { setContent("portrat");}} className={`text-left font-bold hover:text-blueSecondary hover:underline hover:cursor-pointer transition ${content === "iortrat" ? "text-brandRed": "text-brandBlack"}`}>Portrat</button>
                     </div>
                     <hr />
                     {content === "beschreibung" && <Beschreibung></Beschreibung>}
