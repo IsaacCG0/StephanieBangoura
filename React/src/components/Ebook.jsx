@@ -72,7 +72,7 @@ const Ebook = () => {
                         </h1>
                         <div className="h-5"></div>
                         <div className="bg-brandGreen font-semibold text-center p-3 border-brandWhite hover:cursor-pointer" onClick={() => window.location.href = 'https://www.wbv.de/shop/Rituelle-Tanzpaedagogik-I73705'}>
-                            <p>Buy</p>
+                            <p>Jetzt kaufen</p>
                         </div>
                     </div>
                 </div>
