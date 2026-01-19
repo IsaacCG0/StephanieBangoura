@@ -1,7 +1,12 @@
+import { useState } from "react"
 import schlange from "../assets/images/schlange.jpg"
 import tanzpadagogik from "../assets/images/Tanzpadagogik.jpg"
+import Beschreibung from "./ebook-content/Beschreibung"
+import Inhaltsverzeichnis from "./ebook-content/Inhaltsverzeichnis"
+import Portrat from "./ebook-content/Portrat"
 
 const Ebook = () => {
+    const [content, setContent] = useState("beschreibung");
     return (
         <div className="max-w-full overflow-x-hidden">
             {/**Title with parallax */}
@@ -38,28 +43,15 @@ const Ebook = () => {
                             Grundlagen für tanzpädagogische Workshops
                         </h1>
                     </header>
-                    <hr />
-                    <div className=" mt-5 text-justify">
-                        <p>
-                            Aus der Verbindung westafrikanisch-animistischer Tanztraditionen und humanistischer
-                            Psychologie hat Stephanie Bangoura eine Tanzpädagogik entwickelt,
-                            die spirituelle und heilsame Potenziale des Tanzes erschließt.
-                        </p>
-                        <br />
-                        <p>
-                            Grundlage ist das Ritual als zentrales Element des Animismus, das die Autorin entmystifiziert und in pädagogische Praxis im
-                            Tanz integriert. Nach einer Einführung in den Animismus und die humanistische Psychologie wird das pädagogische
-                            Handwerkszeug erläutert. Konkrete Praxisanleitungen und autobiografische Elemente ermöglichen die Planung und Umsetzung
-                            eigener tanzpädagogischer Workshops. Der Band endet mit einem Blick auf Rituelle Tanzpädagogik in anderen soziopolitischen
-                            Diskursen sowie einem tanzpädagogischen Plädoyer für Selbst-Dekolonisierung.
-                        </p>
-                        <br />
-                        <p>
-                            Professionelle Tänzer:innen, Tanzpädagog:innen, Sozialarbeiter:innen, Therapeut:innen und alle, 
-                            die Tanz und Musik beruflich in Gruppen anwenden, finden hier den Zugang zu einer ganzheitlichen und transkulturellen Pädagogik, die kreative, 
-                            spirituelle und heilsame Potenziale des Tanzes für Gemeinschaftsbildung und Persönlichkeitsstärkung verbindet.
-                        </p>
+                    <div className="flex justify-between">
+                        <button onClick={() => { setContent("beschreibung");}} className="text-left font-medium hover:text-blueSecondary hover:underline hover:cursor-pointer transition">Beschreibung</button>
+                        <button onClick={() => { setContent("inhaltsverzeichnis");}} className="text-left font-medium hover:text-blueSecondary hover:underline hover:cursor-pointer transition">Inhaltsverzeichnis</button>
+                        <button onClick={() => { setContent("portrat");}} className="text-left font-medium hover:text-blueSecondary hover:underline hover:cursor-pointer transition">Portrat</button>
                     </div>
+                    <hr />
+                    {content === "beschreibung" && <Beschreibung></Beschreibung>}
+                    {content === "inhaltsverzeichnis" && <Inhaltsverzeichnis></Inhaltsverzeichnis>}
+                    {content === "portrat" && <Portrat></Portrat>}
                 </div>
                 <div className="w-full lg:w-1/4">
                     <div className="bg-gray-300 h-auto p-5">
