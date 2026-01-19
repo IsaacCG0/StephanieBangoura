@@ -43,11 +43,17 @@ const Ebook = () => {
                             Grundlagen für tanzpädagogische Workshops
                         </h1>
                     </header>
-                    <div className="h-20"></div>
-                    <div className="flex m-5">
+                    <div className="h-5"></div>
+                    <div className="flex justify-between text-2xl">
+                        <div>
                         <button onClick={() => { setContent("beschreibung");}} className={`text-left font-bold hover:text-blueSecondary hover:underline hover:cursor-pointer transition ${content === "beschreibung" ? "text-brandRed": "text-brandBlack"}`}>Beschreibung</button>
+                        </div>
+                        <div>
                         <button onClick={() => { setContent("inhaltsverzeichnis");}} className={`text-left font-bold hover:text-blueSecondary hover:underline hover:cursor-pointer transition ${content === "inhaltsverzeichnis" ? "text-brandRed": "text-brandBlack"}`}>Inhaltsverzeichnis</button>
+                        </div>
+                        <div>
                         <button onClick={() => { setContent("portrat");}} className={`text-left font-bold hover:text-blueSecondary hover:underline hover:cursor-pointer transition ${content === "iortrat" ? "text-brandRed": "text-brandBlack"}`}>Portrat</button>
+                        </div>
                     </div>
                     <hr />
                     {content === "beschreibung" && <Beschreibung></Beschreibung>}
