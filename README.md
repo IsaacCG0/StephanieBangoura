@@ -1,4 +1,4 @@
-# StephanieBangoura
-Isaac Cercós Project for Stephanie Bangoura
+# Tanz Der Kulturen
+Isaac Cercós Project for Tanz Der Kulturen
 
-Page: [StephanieBangoura](https://isaaccg0.github.io/StephanieBangoura/)
+Page: [Tanz Der Kulturen](https://isaaccg0.github.io/StephanieBangoura/)
