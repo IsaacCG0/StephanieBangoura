@@ -81,7 +81,7 @@ const Ebook = () => {
                 }}
                 className={`text-left font-bold hover:underline hover:cursor-pointer transition ${content === "portrat" ? "text-brandRed" : "text-brandBlack"}`}
               >
-                Portrat
+                Porträt
               </button>
             </div>
           </div>
@@ -107,7 +107,7 @@ const Ebook = () => {
             <Inhaltsverzeichnis></Inhaltsverzeichnis>
           </details>
           <details>
-            <summary className="text-bold text-2xl">Portrat</summary>
+            <summary className="text-bold text-2xl">Porträt</summary>
             <Portrat></Portrat>
           </details>
         </div>
