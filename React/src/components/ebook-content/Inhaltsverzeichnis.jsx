@@ -1,6 +1,6 @@
 const Inhaltsverzeichnis = () => {
   return (
-    <div className=" mt-5 text-justify">
+    <div className=" mt-5">
       <ul>
         <li>
           <strong>Vorworte</strong>
