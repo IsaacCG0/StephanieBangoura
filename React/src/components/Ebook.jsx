@@ -42,6 +42,9 @@ const Ebook = () => {
             <p>Nur als E-Book erhältlich</p>
           </div>
         </div>
+        {/**Content PC
+        * ------------------------------------
+        */}
         <div className="w-full lg:w-2/4 flex-col hidden md:flex">
           <header>
             <p>Stephanie Bangoura</p>
@@ -50,9 +53,6 @@ const Ebook = () => {
             </h1>
           </header>
           <div className="h-5"></div>
-          {/**Content PC
-           * ------------------------------------
-           */}
           <div className="flex justify-between text-2xl">
             <div>
               <button
