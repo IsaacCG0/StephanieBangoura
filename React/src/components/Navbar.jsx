@@ -26,7 +26,6 @@ const Navbar = ({ changePage }) => {
       {isOpen && (
         <div className="lg:hidden flex flex-col mt-4 space-y-4 pb-2 border-t pt-4">
           {/* <button onClick={() => { changePage("home"); setIsOpen(false); }} className="text-left font-medium hover:text-blueSecondary hover:underline hover:cursor-pointer transition">Home</button> */}
-          <button onClick={() => { setIsOpen(false); }} className="text-left font-medium hover:text-blueSecondary hover:underline hover:cursor-pointer transition">Home</button>
           <button onClick={() => { changePage("ebook"); setIsOpen(false); }} className="text-left font-medium hover:text-blueSecondary hover:underline hover:cursor-pointer transition">E-Book</button>
         </div>
       )}
@@ -37,7 +36,6 @@ const Navbar = ({ changePage }) => {
       {/**Desktop navbar */}
       <div className="hidden lg:flex gap-6">
         {/* <button onClick={() => changePage("home")} className="hover:text-blueSecondary hover:underline hover:cursor-pointer transition">Home</button> */}
-        <button className="hover:text-blueSecondary hover:underline hover:cursor-pointer transition">Home</button>
         <button onClick={() => changePage("ebook")} className="hover:text-blueSecondary hover:underline hover:cursor-pointer transition">E-Book</button>
       </div>
     </nav>
