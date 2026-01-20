@@ -15,7 +15,7 @@ const Footer = () =>{
             </div>
         </div>
         <div className="bg-brandBlack text-brandWhite text-center justify-center p-4">
-            <p>© 2025 Stephanie Bangoura</p>
+            <p>© Tanz Der Kulturen</p>
         </div>
         </footer>
     );
