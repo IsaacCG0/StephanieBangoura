@@ -12,7 +12,7 @@ const Ebook = () => {
       {/**Title with parallax */}
       <div className="relative h-70 max-w-full overflow-hidden flex items-center justify-center">
         <div
-          className="absolute inset-0 bg-fixed bg-center bg-cover z-0 bg-brandLila/50 bg-blend-multiply" 
+          className="absolute inset-0 bg-fixed bg-center bg-cover z-0 bg-brandDarkBlue/70 bg-blend-multiply" 
           style={{ backgroundImage: `url(${schlange})` }} 
         ></div>
         <div className="relative z-10 text-center">
